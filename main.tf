@@ -124,3 +124,10 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+module "s3_bucket" {
+source = "app.terraform.io/policy-as-code-training/s3-bucket-mg/aws"
+version = "1.0.0"
+
+bucket_name = "mghcps3bucket"
+}
