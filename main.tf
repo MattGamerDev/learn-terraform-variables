@@ -127,6 +127,6 @@ module "ec2_instances" {
 
 module "terraform-aws-s3-bucket-mg" {
   source  = "app.terraform.io/policy-as-code-training/terraform-aws-s3-bucket-mg/aws"
-  version = "1.1.2"
+  version = "1.1.3"
   bucket_name = "mghcps3bucket"
 }
